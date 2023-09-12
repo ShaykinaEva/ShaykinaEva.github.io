@@ -1,23 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .w100 {
+        width: 200px;
+      }
+      textarea {
+        width: 300px;
+        height: 100px;
+      }
+    </style>
   </head>
 
   <body>
     <ul>
-      <li><a href="http://kubsu.ru/">КубГУ</a></li>
+      <li><a href="http://kubsu.ru/" id="n4">КубГУ</a></li>
       <li><a href="https://kubsu.ru/">КубГУ</a></li>
       <li>
         <a href="http://kubsu.ru/">
           <img src="img_488290.png" style="width: 100px" />
         </a>
       </li>
-      <li><a href="number4.html"></a></li>
-      <li><a href="index.html"></a></li>
-      <li><a href="#kub"></a></li>
+      <li><a href="index.html">сокращённая на внутреннюю</a></li>
+      <li><a href="n4.html#n4">фрагмент</a></li>
+      <li><a href="http://kubsu.ru?watch=123&listen=4m6&piuh=a3e">url</a></li>
+      <li><a href="http://kubsu.ru?id=8">id</a></li>
+      <li><a href="./n9.html/">относительная в текущем</a></li>
+      <li><a href="./about">about</a></li>
+      <li><a href="../folder">уровень выше</a></li>
+      <li><a href="../../folder2">два уровня выше</a></li>
+      <li>
+        <p>
+          Преркйти на главную страницу сайта
+          <a href="http://kubsu.ru/">КубГУ</a>
+        </p>
+      </li>
+      <li>
+        <a href="https://htmlbook.ru/html/a">фрагмент стороннего сайта</a>
+      </li>
+      <li>
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/user/276/1ade9a1393671141.63821e1b12b93.png"
+          usemap="#geometri"
+          style="width: 200px"
+        />
+        <map name="geometri">
+          <area
+            shape="circle"
+            coords="100,70,30"
+            href="https://www.worldatlas.com/r/w1200-q80/upload/c7/91/96/shutterstock-109340948.jpg"
+          />
+          <area
+            shape="reсt"
+            coords="80,110,120,150"
+            href="https://wallpapers.com/images/hd/happy-golden-retriever-puppy-71yfjbyj1htlfr9k.jpg"
+          />
+        </map>
+      </li>
+      <li><a href="">постой href</a></li>
+      <li><a>без href</a></li>
+      <li><a href="http://kubsu.ru" rel="nofollow">запрещён переход</a></li>
+      <li>
+        <noindex><a href="http://kubsu.ru">индексация</a></noindex>
+      </li>
+      <lo>
+        <li><a href="http://kubsu.ru">title1</a></li>
+        <li><a href="https://htmlbook.ru/html/a">title2</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/HTML">title3</a></li>
+      </lo>
+      <li><a href="ftp://user:hhfiwuuf@bha.com:32/folder/file.pdf"></a></li>
     </ul>
+
+    <h1>Форма HTML</h1>
+
+    <form action="/" method="POST">
+      <label>
+        ФИО:<br />
+        <input
+          class="w100"
+          name="field-name-1"
+          value="начальное значение"
+        /> </label
+      ><br />
+
+      <label>
+        Телефон:<br />
+        <input
+          class="w100"
+          name="field-email"
+          type="tel"
+          placeholder="Введите ваш номер телефона"
+        /> </label
+      ><br />
+
+      <label>
+        E-mail:<br />
+        <input
+          class="w100"
+          name="field-email"
+          type="email"
+          placeholder="Введите вашy почту"
+        /> </label
+      ><br />
+      <label>
+        Текстовое поле даты:<br />
+        <input name="field-date" value="2004-11-12" type="date" /> </label
+      ><br />
+      Пол:<br />
+      <label
+        ><input
+          type="radio"
+          checked="checked"
+          name="radio-group-1"
+          value="Значение1"
+        />
+        M</label
+      >
+      <label
+        ><input type="radio" name="radio-group-1" value="Значение2" /> Ж</label
+      ><br />
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea></label
+      ><br />
+
+      <label>
+        Список:<br />
+        <select name="field-name-3">
+          <option value="Значение1">pascal</option>
+          <option value="Значение2" selected="selected">c++</option>
+          <option value="Значение3">python</option>
+        </select> </label
+      ><br />
+
+      <label>
+        Список:
+        <br />
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">pascal</option>
+          <option value="Значение2" selected="selected">c++</option>
+          <option value="Значение3" selected="selected">python</option>
+          <option value="Значение4" selected="selected">c</option>
+          <option value="Значение5" selected="selected">Java</option>
+          <option value="Значение6" selected="selected">PHP</option>
+          <option value="Значение7" selected="selected">JS</option>
+        </select> </label
+      ><br />
+
+      Чекбокс:<br />
+      <label
+        ><input type="checkbox" checked="checked" name="check-1" /> С контактом
+        ознакомлен(а)</label
+      ><br />
+
+      <input type="submit" value="Сохранить" />
+    </form>
   </body>
 </html>
