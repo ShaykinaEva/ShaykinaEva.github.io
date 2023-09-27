@@ -16,8 +16,6 @@ body{
   margin: 0;
   background-color: #f9accf;
   font-family: 'Kalam', cursive;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-
 }
 fieldset{
   border-color: #a2075c;
@@ -121,7 +119,7 @@ nav {
     color:#fe90e4;
     padding: 10px;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     display: inline-block;
   }
   nav a:hover {
@@ -130,12 +128,16 @@ nav {
     margin-left: 5px;
     text-align:center;
   }
-.title{
+h1 {
   font-size: 30px;
 	padding-top: 15px;
-	text-align: left;
+  padding-right: 10%;
+	text-align: right;
   color: #fbf9fa;
-
+  font-family: 'Kalam', cursive;
+}
+a {
+  text-decoration: none;
 }
   .block{
     max-width: 900px;
@@ -144,12 +146,11 @@ nav {
     margin-top: 0px;
     padding: 40px;
   }
-  .flex-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    align-items: center;
+  .logo {
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
   }
   .page{
     display: flex;
@@ -163,6 +164,7 @@ nav {
     padding-top: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Kalam', cursive;
   }
   
   .page :nth-child(4){
