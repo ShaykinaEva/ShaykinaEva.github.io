@@ -108,9 +108,14 @@ nav {
     }
 .links{
   list-style: none;
-	position: absolute;
-	top: 10px;
-	right: 60px;
+	display: flex;
+  flex-direction: column;
+  /* margin: 10px; */
+  padding: 10px;
+  /* border-radius: 10px; */
+  background-color: #a2075c; 
+  margin-top:5px; 
+  text-align: center;
 }
   nav a {
     color:#fe90e4;
@@ -151,13 +156,65 @@ nav {
     flex-direction: column;
     flex: 3;
   }
+  .page{
+    font-family: 'Fira Sans', serif;
+    margin: 0 auto; 
+    padding: 10px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page :nth-child(4){
+    order: 4;
+  }
+  
+  .page :nth-child(1){
+    order: 1;
+  }
+  
+  .page :nth-child(2){
+    order: 3;
+  }
+  
+  .page :nth-child(3){
+    order: 2;
+  }  
   
   .headerblock {
     display: flex;
     flex-direction: column;
   }
-  @media screen and (max-width: 650px)  {
-    .flex-container{
-      flex-direction: column;
-    } 
+  .headerblock aside {
+    background-color: #a2075c;
+    flex: 1;
+    order: 1;
+  }
+  
+  .headerblock main {
+    background-color: #a2075c;
+    flex: 3;
+    order: 2;
+  }
+  @media screen and (min-width: 800px) and (orientation: landscape) {
+    .headerblock {
+      flex-direction: row;
+    }
+  
+    .links {
+      flex-direction: row;
+    }
+  
+    .page :nth-child(2){
+      order: 2;
+    }
+    
+    .page :nth-child(3){
+      order: 3;
+    }
+  
+    .form{
+      width: 540px;
+    }
+  
   }
