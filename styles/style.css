@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=M+PLUS+Rounded+1c:wght@300;500;900&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 table{
     font-family: sans-serif;
     font-size: 15px;
     text-align:center;
-    width: 600px;
-    height: 450px;
+    width: 100%;
+    height: 300px;
     border-collapse: separate; 
     border-spacing: 2px;
     background:#a2075c;
     color: #fbf9fa;
-    margin: 10px;
+    margin: 0 auto;
 }
 body{
   margin: 0;
@@ -20,14 +23,16 @@ body{
 fieldset{
   border-color: #a2075c;
   border-radius: 50px;
+  padding: 5%;
 }
 form{
   padding: 30px;
   border-color: #a2075c;
   border-radius: 50px;
 }
-legend{
-  font-size: large;
+legend,
+.block_table h2{
+  font-size: 27px;
   color: hsl(257, 55%, 52%);
 }
 caption{
@@ -145,17 +150,29 @@ a {
     margin: auto;
     margin-top: 0px;
     padding: 40px;
+    max-width: 100%;
+  }
+  .block_table h2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(22%, -100%);
+    background-color: #f9accf;
+  }
+  .block_table > div{
+    border: 3px #a2075c solid;
+    border-radius: 50px;
+    position: relative;
+    padding: 7%;
+    padding-top: 30px;
+  }
+  .block_table > div > div{
+    overflow-x: auto;
   }
   .logo {
-    border-radius: 5px;
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
-  }
-  .page{
-    display: flex;
-    flex-direction: column;
-    flex: 3;
   }
   .page{
     font-family: 'Fira Sans', serif;
@@ -165,6 +182,7 @@ a {
     display: flex;
     flex-direction: column;
     font-family: 'Kalam', cursive;
+    flex: 3;
   }
   
   .page :nth-child(4){
@@ -176,7 +194,7 @@ a {
   }
   
   .page :nth-child(2){
-    order: 3;
+    order: -1;
   }
   
   .page :nth-child(3){
@@ -202,21 +220,20 @@ a {
     .headerblock {
       flex-direction: row;
     }
-  
+  .table{
+    order: -1;
+  }
     .links {
       flex-direction: row;
     }
-  
+   .page :nth-child(3){
+      order: 3;
+    }
     .page :nth-child(2){
       order: 2;
     }
-    
-    .page :nth-child(3){
-      order: 3;
-    }
-  
     .form{
-      width: 540px;
+      width: 100%;
     }
   
   }
