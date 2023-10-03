@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=M+PLUS+Rounded+1c:wght@300;500;900&display=swap');
-
+#page .container{
+  display: flex;
+  flex-direction: column;
+  
+}
 *{
   box-sizing: border-box;
 }
@@ -16,39 +20,29 @@ table{
     margin: 0 auto;
 }
 body{
-  margin: 0;
   background-color: #f9accf;
   font-family: 'Kalam', cursive;
 }
-fieldset{
-  border-color: #a2075c;
-  border-radius: 50px;
-  padding: 5%;
-}
-form{
-  padding: 30px;
+#form{
+  /* padding: 30px; */
   border-color: #a2075c;
   border-radius: 50px;
 }
-legend,
-.block_table h2{
-  font-size: 27px;
-  color: hsl(257, 55%, 52%);
-}
+
 caption{
     font-family: sans-serif;
 }
 
 th{
     font-size: 15px;
-    padding: 10px;
+    /* padding: 10px; */
     background: #a2075c;
     /* border-radius: 20px; */
 }
 
 td{
     background: #fd65b4;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 tr.two td{
@@ -73,7 +67,7 @@ tr.two td{
  header{
     background:#a2075c;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     height: 80px;
  }
 
@@ -114,15 +108,15 @@ nav {
 	display: flex;
   flex-direction: column;
   /* margin: 10px; */
-  padding: 10px;
+  /* padding: 10px; */
   /* border-radius: 10px; */
   background-color: #a2075c; 
-  margin-top:5px; 
+  /* margin-top:5px;  */
   text-align: center;
 }
   nav a {
     color:#fe90e4;
-    padding: 10px;
+    /* padding: 10px; */
     text-decoration: none;
     /* font-weight: bold; */
     display: inline-block;
@@ -130,16 +124,19 @@ nav {
   nav a:hover {
     border-radius:10px;
     background-color: #c40a6a;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     text-align:center;
   }
 h1 {
   font-size: 30px;
-	padding-top: 15px;
-  padding-right: 10%;
+	/* padding-top: 15px;
+  padding-right: 10%; */
 	text-align: right;
   color: #fbf9fa;
   font-family: 'Kalam', cursive;
+}
+h2{
+  color: hsl(257, 55%, 52%);
 }
 a {
   text-decoration: none;
@@ -147,10 +144,12 @@ a {
   .block{
     max-width: 900px;
     background-color: #f9accf;
-    margin: auto;
+    /* margin: auto;
     margin-top: 0px;
-    padding: 40px;
+    padding: 40px; */
     max-width: 100%;
+    border: 3px #a2075c solid;
+    border-radius: 50px;
   }
   .block_table h2{
     position: absolute;
@@ -160,11 +159,11 @@ a {
     background-color: #f9accf;
   }
   .block_table > div{
-    border: 3px #a2075c solid;
+    /* border: 3px #a2075c solid; */
     border-radius: 50px;
     position: relative;
     padding: 7%;
-    padding-top: 30px;
+    /* padding-top: 30px; */
   }
   .block_table > div > div{
     overflow-x: auto;
@@ -172,9 +171,9 @@ a {
   .logo {
     max-width: 100%;
     max-height: 100%;
-    padding: 10px;
+    /* padding: 10px; */
   }
-  .page{
+  /* .page{
     font-family: 'Fira Sans', serif;
     margin: 0 auto; 
     padding: 10px;
@@ -183,7 +182,7 @@ a {
     flex-direction: column;
     font-family: 'Kalam', cursive;
     flex: 3;
-  }
+  } */
   
   .page :nth-child(4){
     order: 4;

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/bootstrap.min.css" rel="stylesheet" />
+    <title>Practies 4</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="headerblock">
+      <aside>
+        <a href="./index.html">
+          <img
+            class="logo"
+            src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614569841_4-p-oblaka-na-belom-fone-8.png"
+            alt="облако"
+          />
+        </a>
+      </aside>
+      <main>
+        <a href="./index.html"><h1>ЗАДАНИЕ 4</h1></a>
+      </main>
+    </div>
+    <nav class="links">
+      <li><a href="#link">ссылки</a></li>
+      <li><a href="#table">таблица</a></li>
+      <li><a href="#form">форма</a></li>
+    </nav>
+
+    <div id="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="block m-3">
+              <h2 id="link">ССЫЛКИ</h2>
+              <ol>
+                <li><a href="http://kubsu.ru/" id="n4">КубГУ</a></li>
+                <li><a href="https://kubsu.ru/">КубГУ</a></li>
+                <li>
+                  <a href="http://kubsu.ru/">
+                    <img
+                      src="./about/img_488290.png"
+                      alt=""
+                      style="width: 100px"
+                    />
+                  </a>
+                </li>
+                <li><a href="index.html">сокращённая на внутреннюю</a></li>
+                <li><a href="n4.html#n4">фрагмент</a></li>
+                <li>
+                  <a href="http://kubsu.ru?watch=123&listen=4m6&piuh=a3e"
+                    >url</a
+                  >
+                </li>
+                <li><a href="http://kubsu.ru?id=8">id</a></li>
+                <li><a href="./n9.html/">относительная в текущем</a></li>
+                <li><a href="./about">about</a></li>
+                <li><a href="../folder">уровень выше</a></li>
+                <li><a href="../../folder2">два уровня выше</a></li>
+                <li>
+                  <p>
+                    Перейти на главную страницу сайта
+                    <a href="http://kubsu.ru/">КубГУ</a>
+                  </p>
+                </li>
+                <li>
+                  <a href="https://htmlbook.ru/html/a"
+                    >фрагмент стороннего сайта</a
+                  >
+                </li>
+                <li>
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/user/276/1ade9a1393671141.63821e1b12b93.png"
+                    usemap="#geometri"
+                    style="width: 200px"
+                    alt=""
+                  />
+                  <map name="geometri">
+                    <area
+                      shape="circle"
+                      coords="100,70,30"
+                      href="https://www.worldatlas.com/r/w1200-q80/upload/c7/91/96/shutterstock-109340948.jpg"
+                      alt=""
+                    />
+                    <area
+                      shape="rect"
+                      coords="80,110,120,150"
+                      href="https://wallpapers.com/images/hd/happy-golden-retriever-puppy-71yfjbyj1htlfr9k.jpg"
+                      alt=""
+                    />
+                  </map>
+                </li>
+                <li><a href="">постой href</a></li>
+                <li><a>без href</a></li>
+                <li>
+                  <a href="http://kubsu.ru" rel="nofollow">запрещён переход</a>
+                </li>
+                <li><a href="http://kubsu.ru">индексация</a></li>
+                <li><a href="http://kubsu.ru">title1</a></li>
+                <li><a href="https://htmlbook.ru/html/a">title2</a></li>
+                <li>
+                  <a href="https://ru.wikipedia.org/wiki/HTML">title3</a>
+                </li>
+                <li>
+                  <a href="ftp://user:hhfiwuuf@bha.com:32/folder/file.pdf"
+                    >пользователь</a
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="block block_table m-3">
+              <div>
+                <h2 id="table">ТАБЛИЦА</h2>
+                <div>
+                  <table>
+                    <caption>
+                      <tr>
+                        <th>заголовок 1</th>
+                        <th>заголовок 2</th>
+                        <th>заголовок 3</th>
+                        <th>заголовок 4</th>
+                        <th>заголовок 5</th>
+                      </tr>
+                      <tr>
+                        <td colspan="2">11</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td id="one" rowspan="2">15</td>
+                      </tr>
+                      <tr class="two">
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>31</td>
+                        <td>32</td>
+                        <td>33</td>
+                        <td>34</td>
+                        <td>35</td>
+                      </tr>
+                      <tr class="four">
+                        <td>41</td>
+                        <td>42</td>
+                        <td>43</td>
+                        <td>44</td>
+                        <td>45</td>
+                      </tr>
+                      <tr>
+                        <td>51</td>
+                        <td>52</td>
+                        <td>53</td>
+                        <td>54</td>
+                        <td>55</td>
+                      </tr>
+                      <tr class="six">
+                        <td>61</td>
+                        <td>62</td>
+                        <td>63</td>
+                        <td>64</td>
+                        <td>65</td>
+                      </tr>
+                    </caption>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="block m-3 mb-30">
+              <h2 id="form">ФОРМА</h2>
+              <form action="/" method="POST">
+                <label>
+                  ФИО:<br />
+                  <input
+                    class="w100"
+                    name="field-name-1"
+                    value="начальное значение"
+                  /> </label
+                ><br />
+
+                <label>
+                  Телефон:<br />
+                  <input
+                    class="w100"
+                    name="field-email"
+                    type="tel"
+                    placeholder="Введите ваш номер телефона"
+                  /> </label
+                ><br />
+
+                <label>
+                  E-mail:<br />
+                  <input
+                    class="w100"
+                    name="field-email"
+                    type="email"
+                    placeholder="Введите вашy почту"
+                  /> </label
+                ><br />
+                <label>
+                  Текстовое поле даты:<br />
+                  <input
+                    name="field-date"
+                    value="2004-11-12"
+                    type="date"
+                  /> </label
+                ><br />
+                Пол:<br />
+                <label
+                  ><input
+                    type="radio"
+                    checked="checked"
+                    name="radio-group-1"
+                    value="Значение1"
+                  />
+                  M</label
+                >
+                <label
+                  ><input type="radio" name="radio-group-1" value="Значение2" />
+                  Ж</label
+                ><br />
+                <label>
+                  Биография:<br />
+                  <textarea name="field-name-2"></textarea></label
+                ><br />
+
+                <label>
+                  Список:<br />
+                  <select name="field-name-3">
+                    <option value="Значение1">pascal</option>
+                    <option value="Значение2" selected="selected">c++</option>
+                    <option value="Значение3">python</option>
+                  </select> </label
+                ><br />
+
+                <label>
+                  Список:
+                  <br />
+                  <select name="field-name-4[]" multiple="multiple">
+                    <option value="Значение1">pascal</option>
+                    <option value="Значение2" selected="selected">c++</option>
+                    <option value="Значение3" selected="selected">
+                      python
+                    </option>
+                    <option value="Значение4" selected="selected">c</option>
+                    <option value="Значение5" selected="selected">Java</option>
+                    <option value="Значение6" selected="selected">PHP</option>
+                    <option value="Значение7" selected="selected">JS</option>
+                  </select> </label
+                ><br />
+
+                Чекбокс:<br />
+                <label
+                  ><input type="checkbox" checked="checked" name="check-1" /> С
+                  контактом ознакомлен(а)</label
+                ><br />
+
+                <input type="submit" value="Сохранить" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <span> (c) Shaykina Evgenia </span>
+      </div>
+    </div>
+  </body>
+</html>
