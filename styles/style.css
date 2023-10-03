@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=M+PLUS+Rounded+1c:wght@300;500;900&display=swap');
-#page .container{
+#page .container,
+#page{
   display: flex;
   flex-direction: column;
   
@@ -193,6 +194,9 @@ a {
     flex: 3;
     order: 2;
   }
+  .rec{
+    order: -1;
+  }
   @media screen and (min-width: 800px) and (orientation: landscape) {
     .headerblock {
       flex-direction: row;
@@ -212,5 +216,11 @@ a {
     .form{
       width: 100%;
     }
-  
+    .container{
+      display: inline-flex !important;
+      align-items: center;
+    }
+    .rec{
+      order: 0;
+    }
   }
