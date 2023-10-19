@@ -16,7 +16,7 @@ h3{
     color: #f5f5f5;
     font-size: large;
 }
-input,
+#count,
 select{
     width: 100%;
     padding: 6px 8px;
@@ -26,9 +26,13 @@ select{
     font-size: 20px !important;
 }
 
+label{
+    user-select: none;
+}
+
 #main{
     width: 400px;
-    background-color: #ee339a73;
+    background-color:  #ee339a73;
     padding: 30px;
     padding-top: 0;
     border-radius: 10px;
@@ -49,29 +53,26 @@ select{
 #main > div:last-child{
     margin-bottom: 0;
 }
-#main button{
-    padding: 6px 8px;
-    font-size: 18px;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: rgb(137, 8, 243);
-    color: #f5f5f5;
-}
-#main button:active{
-    filter: brightness(120%);
-}
 .foot{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 #price{
     font-weight: bold;
     font-size: 20px;
 }
+label{
+    cursor: pointer;
+}
+.selects > div{
+    margin: 10px 0;
+}
+.hide{
+    display: none;
+}
 
 @media screen and (max-width: 430px) {
-    input,
+    #count,
     select{
         font-size: 4.2vw !important;
     }
@@ -84,9 +85,6 @@ select{
     }
     #main h4{
         font-size: 4vw;
-    }
-    #main button{
-        font-size: 5vw;
     }
     .foot{
         flex-direction: column;
