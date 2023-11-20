@@ -23,6 +23,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-12/1639771575_154-catherineasquithgallery-com-p-nezhno-rozovie-oblaka-fon-327.jpg");
+  background-size: auto;
 }
 .modal-content {
   border-radius: 15px;
